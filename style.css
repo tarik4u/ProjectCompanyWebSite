@@ -1,0 +1,110 @@
+/*style body element by adding background img and set it to cover, add font-familly*/
+body{
+    font-family: Georgia, serif; /**/
+    background: url(image/test.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /**/
+}
+/*style brand img*/
+.logo{
+    height: 40px;
+    margin: 0px;
+    padding: 0px;  
+}
+/*style our nav bar*/
+.navbar-inverse{
+    background: rgba(0,0,0, 0.5);   
+}
+.nav li{
+    color: white;
+    font-size: 20px;
+    margin-right: 35px;
+    padding: 10px 0;
+}
+
+.nav li:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 9px; /*pour ne pas changer la valeur de nav bar*/
+    cursor: pointer; /*souris en mode pointeur*/
+}
+/*style jumbotron*/
+.jumbotron{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10;
+    letter-spacing: 2px;
+}
+/*limit the with of the icons section*/
+.container{
+    max-width: 1000px;
+}
+/*Style icons section using boostrap grid system*/
+.bodyimage{
+    height: 100px;    
+}
+.col-md-4{
+    text-align: center;
+    color: white;
+}
+.highlight-container, .highlight {
+    position: relative;
+}
+.highlight-container {
+    display: inline-block;
+}
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background-color: black;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+
+.icons p{
+    font-size: 15px;
+}
+/*style contact button*/
+.contact{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.btn{
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    border: non;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 70px;
+    letter-spacing: 1.3px;
+/*    margin-bottom: 50px;*/
+}
+.btn:hover{
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    border: none;
+}
+/*stylefooter*/
+.footer{
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+/*    margin: 15px;*/
+    font-size: 15px;
+    padding-top: 10px;
+}
+/*media queries for small device */
+@media (max-width: 768px){
+    .bodyimage{
+        height: : 70px;
+    }
+}
